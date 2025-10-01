@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Hora actual</title>
+  <script>
+    function actualizarHora() {
+      const ahora = new Date();
+      document.getElementById("hora").textContent = ahora.toLocaleString();
+    }
+    setInterval(actualizarHora, 1000);
+    window.onload = actualizarHora;
+  </script>
+</head>
+<body style="font-family: Arial; text-align: center; margin-top: 20%; background-color: #f5f5f5;">
+  <h1>⏰ Hora actual</h1>
+  <p id="hora" style="font-size: 2em; font-weight: bold;"></p>
+</body>
+</html>
